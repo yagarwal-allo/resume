@@ -1,0 +1,246 @@
+%-------------------------
+% Resume in Latex
+% Author : Jake Gutierrez
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\usepackage{multicol}
+\setlength{\multicolsep}{-3.0pt}
+\setlength{\columnsep}{-1pt}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.6in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.19in}
+\addtolength{\topmargin}{-.7in}
+\addtolength{\textheight}{1.4in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large\bfseries
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-1.5pt}}
+  }
+}
+
+\newcommand{\classesList}[4]{
+    \item\small{
+        {#1 #2 #3 #4 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & \textbf{\small #2} \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubheadingDetailed}[5]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & \textbf{\small #2} \\
+      \textit{\small#3} & \textit{\small #4} \\
+      {\small#5} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{1.001\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & \textbf{\small #2}\\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.0in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{0pt}}
+
+
+\begin{document}
+
+
+\begin{center}
+    {\Huge \scshape Yash Agarwal} \\ \vspace{1pt}
+    % 2098 16th Main Indiranagar Hal Stage 2 Bangalaore Karnataka 560008 \\ \vspace{1pt}
+    \small \raisebox{-0.1\height}\faPhone\ +91-7982550561 ~ \href{mailto:yagarwal1307@gmail.com}{\raisebox{-0.2\height}\faEnvelope\  \underline{yagarwal1307@gmail.com}} ~ 
+    \href{https://www.linkedin.com/in/yash-agarwal-5b038a167/}{\raisebox{-0.2\height}\faLinkedin\ \underline{linkedin.com/in/yash-agarwal-5b038a167}}  ~
+    \href{https://github.com/yagarwal-allo}{\raisebox{-0.2\height}\faGithub\ \underline{github.com/yagarwal-allo}}
+    \vspace{-8pt}
+\end{center}
+
+%-----------PROGRAMMING SKILLS-----------
+\section{Skills}
+ \begin{itemize}[leftmargin=0.08in, label={}]
+    \small{\item{
+     \textbf{Languages}{: Python, Typescript, JavaScript, Java, C++, SQL, HTML/CSS, Solidity} \\
+     \textbf{Developer Tools}{: AWS, GCP, Redis, Serverless, Terraform, Docker, Kubernetes, IPFS, Web3Storage, Drand } \\
+     \textbf{Technologies/Frameworks}{: LLM, NestJS, NextJS, SpringBoot, FastAPI, Django, React, SkLearn, NLTK, Qiskit} \\
+    }}
+ \end{itemize}
+ \vspace{-16pt}
+
+
+
+%-----------EXPERIENCE-----------
+\section{Work Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheadingDetailed
+      {\href{https://www.allohealth.care/}{Allo Health \faLink\ }}{June 2022 -- Present}
+      {Founding Engineer}{Banagalore, Karanataka}
+      {- Building an end to end health care delivery platform. Joined as one of the founding engineers.}
+      \resumeItemListStart
+        \resumeItem{\textbf{AI Copilot --} Project owner of Allo Copilot, an omnichannel clinical assistance copilot:}
+          \resumeItemListStart
+            \resumeItem{Created and maintained APIs, interfaces, pipelines and infrastructure for the RAG and ReAct powered copilot.}
+            \resumeItem{Automated triaging, conversational actioning and prioritised escalations reduced \textbf{90\%} human interventions.}
+            \resumeItem{Reduced response time and multilingual responses improved patient satisfaction and increased bookings by  \textbf{20\%}.}
+            \resumeItem{\textbf{Exposure:} AWS, LLM, Python, VectorDB, Fast API, NestJS, NextJS, Langchain, ReAct, RAG.}
+          \resumeItemListEnd
+        \resumeItem{\textbf{EMR, Payments \& Commerce and Teleconsultation Platform --} Core services offered by Allo Health:}
+          \resumeItemListStart
+            \resumeItem{Created and maintained APIs and infrastructure for services including Scheduler, EMR, Payments \& Commerce.}
+            % \resumeItem{Created user interfaces and admin dashboards for patients, doctors and admins using NextJS and Retool.}
+            % \resumeItem{Led the development of teleconsultation platform improving conversion by x\% and implemented IVR system to fully automate consultation reminders and handshakes earlier handled by a team of 10 people.}
+            \resumeItem{Led the development of teleconsultation platform fully automating the consultation management process. This increased the consultation completion rate by \textbf{30\%} and allowed scaling the operations \textbf{4x} with the same team size.}
+            \resumeItem{Led the implementation of authentication system and key contributor in RBAC based authorization system.}
+            \resumeItem{\textbf{Exposure:} AWS, NestJS, NextJS, 100ms, Paperform, SpringBoot, MySQL, Exotel, Retool, Auth0, Gupshup.}
+          \resumeItemListEnd
+        \resumeItem{\textbf{Infrastructure, Platform and Data:}}
+          \resumeItemListStart
+            \resumeItem{\textbf{Event Driven Architecture:} Used Redis streams \& groups to enable async processing of events and improving the reliability and observability of the events in the system.}    
+            \resumeItem{\textbf{Infrastructure as code}: Wrote Terraform, docker and github actions configurations to provision infrastructure and set up CI/CD. Optimized existing CI/CD pipelines to reduce deployment times and costs by \textbf{60\%}}
+            % \resumeItem{Created tools to \emph{fully automate} data extraction and dashboard creation eliminating all the manual efforts.} 
+            \resumeItem{\textbf{DataOps}: Developed a tool to \emph{fully automate} data extraction pipeline by allowing users to schedule queries which on execution dumped data in google sheets, eliminating \textbf{90\%} of the manual efforts.}
+            % \resumeItem{Wrote migration scripts to ensure data integrity and backfill data.}   
+            % \resumeItem{Implemented feature flags to enable feature management \& toggling and A/B testing.}
+            \resumeItem{\textbf{Exposure:} AWS, GCP, Python, Redis, Github Actions, Docker, Terraform, Harness, Feature Flag}
+          \resumeItemListEnd
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {\href{https://www.mtxb2b.com/}{MTX Group \faLink\ }}{May 2021 -- Aug 2021}
+      {Software Engineer Intern}{Hyderabad, Telangana}
+      \resumeItemListStart
+        \resumeItem{\textbf{Notification Service:} Built a consumer listener architecture based highly available sms notification and chatbot service improving response time by \textbf{40\%} and engagement by \textbf{20\%}.}
+        \resumeItem{\textbf{Component Library:} Created a sharable library for AngularJS components using StoryBook.}
+        \resumeItem{Awarded PPO for exceptional performance and contribution to the company.}
+        \resumeItem{\textbf{Exposure:} \emph{Spring Boot, Kafka, Twilio, MongoDB, NestJS, AngularJS, StoryBook, NPM.} }
+    \resumeItemListEnd
+    
+  \resumeSubHeadingListEnd
+\vspace{-13pt}
+
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {IIT (BHU) Varanasi}{July 2018 -- May 2022}
+      {Bachelor of Technology (9.16 CGPA)}{Varanasi, Uttar Pradesh}
+  \resumeSubHeadingListEnd
+
+%-----------PROJECTS-----------
+\section{Projects}
+    \vspace{-5pt}
+    \resumeSubHeadingListStart
+      \resumeProjectHeading
+          {\href{https://github.com/yagarwal-allo/timecapsule}{\underline{\textbf{Timecapsule - A responsible vulnerability discloser}}} $|$ \emph{NestJS, IPFS, Drand, Web3 Storage}}{May 2023}
+          \resumeItemListStart
+            \resumeItem{A tool to enable security researchers to time-lock the discovered vulnerabilities and responsibly disclose them later.}
+          \resumeItemListEnd 
+          \vspace{-17pt}
+      \resumeProjectHeading
+          {\href{https://github.com/dhritimaandas/Traffic_Sign_Recog_Inter_IIT}{\underline{\textbf{Traffic Signal Recognition - Bosch}}} $|$ \emph{NextJS, Flask, Google Firebase}}{Mar 2021}
+          \resumeItemListStart
+            \resumeItem{Lead a team of 4 to an ETL tool to enable continuous training, deployment and monitoring of deep learning model.}
+          \resumeItemListEnd
+          \vspace{-17pt}
+      \resumeProjectHeading
+          {\textbf{Dream 11 Team Predictor} $|$ \emph{Python, Sklearn, Beautiful Soup}}{Sept 2020}
+          \resumeItemListStart
+            \resumeItem{Trained a model to predict the best Dream 11 team for a given match. Accuracy wasn't great but it was fun to build.}
+          \resumeItemListEnd 
+    \resumeSubHeadingListEnd
+\vspace{-15pt}
+
+%
+%-----------PROGRAMMING SKILLS-----------
+\section{Extracurricular}
+\begin{itemize}[leftmargin=0in, label={}]
+   \small{\item{
+    {$\vcenter{\hbox{\tiny$\bullet$}}$}  \emph{Quantum Explorers, IBM} -- Part of 2023 Cohort of Quantum explorers to learn and explore Quantum Computing. \\
+    {$\vcenter{\hbox{\tiny$\bullet$}}$}  \emph{Open Source Contributor} -- Actively contributed to many open source projects like Meshery, OpenCopilot, Qiskit etc. \\
+    {$\vcenter{\hbox{\tiny$\bullet$}}$}  \emph{Gold Medalist Inter-IIT '21} -- Product case study to automate payout process of Kaching.  \\
+    {$\vcenter{\hbox{\tiny$\bullet$}}$}  Led organisations at IIT (BHU) to organise events, workshops and case studies for 200+ students throughout the year. \\
+    {$\vcenter{\hbox{\tiny$\bullet$}}$}  Participated in and won various other prestigious case study competitions. \\
+    {$\vcenter{\hbox{\tiny$\bullet$}}$}  Interned in Equity Research, Data Science and Product roles to develop business acumen and financial analysis skills.  \\
+   }}
+\end{itemize}
+\vspace{-16pt}
+
+\end{document}
